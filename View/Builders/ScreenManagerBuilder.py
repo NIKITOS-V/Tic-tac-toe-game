@@ -5,14 +5,6 @@ from View.MainScreenManager import MainScreenManager
 
 
 class ScreenManagerBuilder:
-    def __init__(self):
-        self.app = None
-
-    def setApp(self, value):
-        self.app = value
-
-        return self
-
     def build(self):
         screenManager = MainScreenManager()
 
@@ -31,7 +23,6 @@ class ScreenManagerBuilder:
         screenManager.add_widget(
             GameScreenBuilder()
             .setName(screenManager.gameScreenName)
-            .setApp(self.app)
             .build()
         )
 

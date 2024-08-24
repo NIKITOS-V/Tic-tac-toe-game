@@ -11,7 +11,6 @@ class TicTacToe(App):
 
         arLayout.add_widget(
             ScreenManagerBuilder()
-            .setApp(self)
             .build()
         )
 

@@ -6,8 +6,14 @@ Builder.load_file("View/Settings/SettingsView.kv")
 
 
 class SettingsScreen(Screen):
-    def __init__(self, **kwargs):
+    def __init__(self, app, **kwargs):
         super().__init__(**kwargs)
+
+        self.app = app
 
     def back(self):
         self.manager.loadMenuScreen()
+
+    def ChangeText(self, app):
+        app.text = "text"
+

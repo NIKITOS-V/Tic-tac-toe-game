@@ -1,21 +1,12 @@
-from kivy.app import App
-
-from View.ARLayout import ARLayout
-from View.Builders.ScreenManagerBuilder import ScreenManagerBuilder
-
-
-class TicTacToe(App):
-
-    def build(self):
-        arLayout = ARLayout()
-
-        arLayout.add_widget(
-            ScreenManagerBuilder()
-            .build()
-        )
-
-        return arLayout
-
+from Model.Service import Service
+from Presenter.Presenter import Presenter
+from View.TicTacToe import TicTacToeApp
 
 if __name__ == "__main__":
-    TicTacToe().run()
+    service = Service()
+
+    presenter = Presenter(service)
+
+    view = TicTacToeApp(presenter)
+
+    view.run()

@@ -4,15 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2fc9a78-a6e9-4988-94e3-bcef4707a883" name="Changes" comment="технический коммит">
+    <list default="true" id="b2fc9a78-a6e9-4988-94e3-bcef4707a883" name="Changes" comment="Изменена математика шейдера">
+      <change afterPath="$PROJECT_DIR$/View/Values/Values.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Menu/Buttons/SettingsButton/ButtonImage.png" beforeDir="false" afterPath="$PROJECT_DIR$/View/Menu/Buttons/SettingsButton/ButtonImage.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Shader/Shader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/View/Shader/Shader.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/DefaultValues/CrossValues.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/DefaultValues/GlobalValues.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/DefaultValues/PlayButtonValues.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/DefaultValues/SettingsButtonValues.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/DefaultValues/SquareValues.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/DefaultValues/ZeroValues.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Formating/ParseColor.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Formating/ParseColor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Game/GameScreenBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Game/GameBuilder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Menu/MenuScreenBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Menu/MenuBuilder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/ScreenManager/AppScreenManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/AppSM/AppSM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/ScreenManager/ScreenManagerBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/AppSM/AppSMBuilder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Settings/SettingsScreenBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Settings/SettingsBuilder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/TicTacToe.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/TicTacToe.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -118,11 +137,20 @@
       <option name="project" value="LOCAL" />
       <updated>1724759567975</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Изменена математика шейдера">
+      <option name="closed" value="true" />
+      <created>1724768682927</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724768682927</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="технический коммит" />
-    <option name="LAST_COMMIT_MESSAGE" value="технический коммит" />
+    <MESSAGE value="Изменена математика шейдера" />
+    <option name="LAST_COMMIT_MESSAGE" value="Изменена математика шейдера" />
   </component>
 </project>

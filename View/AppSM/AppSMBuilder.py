@@ -1,7 +1,7 @@
-from View.Game.GameScreenBuilder import GameScreenBuilder
-from View.Menu.MenuScreenBuilder import MenuScreenBuilder
-from View.Settings.SettingsScreenBuilder import SettingsScreenBuilder
-from View.ScreenManager.AppScreenManager import MainScreenManager
+from View.Game.GameBuilder import GameBuilder
+from View.Menu.MenuBuilder import MenuBuilder
+from View.Settings.SettingsBuilder import SettingsBuilder
+from View.AppSM.AppSM import AppSM
 
 
 class ScreenManagerBuilder:
@@ -14,24 +14,24 @@ class ScreenManagerBuilder:
         return self
 
     def build(self):
-        screenManager = MainScreenManager()
+        screenManager = AppSM()
 
         screenManager.add_widget(
-            MenuScreenBuilder()
+            MenuBuilder()
             .setName(screenManager.menuScreenName)
             .setApp(self.__app)
             .build()
         )
 
         screenManager.add_widget(
-            SettingsScreenBuilder()
+            SettingsBuilder()
             .setName(screenManager.settingsScreenName)
             .setApp(self.__app)
             .build()
         )
 
         screenManager.add_widget(
-            GameScreenBuilder()
+            GameBuilder()
             .setName(screenManager.gameScreenName)
             .setApp(self.__app)
             .build()

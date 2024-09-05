@@ -2,36 +2,45 @@ from kivy.app import App
 from kivy.properties import ListProperty
 
 from View.ARLayout.ARLayout import ARLayout
-from View.ScreenManager.ScreenManagerBuilder import ScreenManagerBuilder
+from View.AppSM.AppSMBuilder import ScreenManagerBuilder
 
-from View.DefaultValues.GlobalValues import GlobalValues
-from View.DefaultValues.PlayButtonValues import PlayButtonValues
-from View.DefaultValues.SettingsButtonValues import SettingsButtonValues
+from View.Values.Values import *
 
 
 class TicTacToeApp(App):
     bg_color = ListProperty()
 
-    play_button_color = ListProperty()
-    on_press_play_button_color = ListProperty()
+    normal_play_button_color = ListProperty()
+    pressed_play_button_color = ListProperty()
 
-    settings_button_color = ListProperty()
-    on_press_settings_button_color = ListProperty()
+    normal_settings_button_color = ListProperty()
+    pressed_settings_button_color = ListProperty()
 
     def __init__(self, presenter, **kwargs):
         super().__init__(**kwargs)
+
         self.presenter = presenter
 
+        self.__global_values = None
+        self.__play_button_values = None
+        self.__settings_button_values = None
+
+        self.__init_color_settings()
         self.set_default_values()
 
+    def __init_color_settings(self):
+        self.__global_values = GlobalValues()
+        self.__play_button_values = PlayButtonValues()
+        self.__settings_button_values = SettingsButtonValues()
+
     def set_default_values(self):
-        self.bg_color = GlobalValues().bg_color
+        self.bg_color = self.__global_values.default_bg_color
 
-        self.play_button_color = PlayButtonValues().color
-        self.on_press_play_button_color = PlayButtonValues().on_press_color
+        self.normal_play_button_color = self.__play_button_values.default_normal_color
+        self.pressed_play_button_color = self.__play_button_values.default_pressed_color
 
-        self.settings_button_color = SettingsButtonValues().color
-        self.on_press_settings_button_color = SettingsButtonValues().on_press_color
+        self.normal_settings_button_color = self.__settings_button_values.default_normal_color
+        self.pressed_settings_button_color = self.__settings_button_values.default_pressed_color
 
     def build(self):
         arLayout = ARLayout()

@@ -11,7 +11,7 @@ class PlayButton(ShaderButton):
 
     def provide_color(self, *dt):
         if self.state == "normal":
-            self.canvas["current_color"] = tuple(self.__app.play_button_color)
+            self.canvas["current_color"] = tuple(self.__app.normal_play_button_color)
 
         else:
-            self.canvas["current_color"] = tuple(self.__app.on_press_play_button_color)
+            self.canvas["current_color"] = tuple(self.__app.pressed_play_button_color)

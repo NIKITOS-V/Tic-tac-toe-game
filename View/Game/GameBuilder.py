@@ -1,10 +1,10 @@
-from View.Menu.MenuScreen import MenuScreen
+from View.Game.GameScreen import GameScreen
 
 
-class MenuScreenBuilder:
+class GameBuilder:
     def __init__(self):
-        self.__name = None
         self.__app = None
+        self.__name = None
 
     def setName(self, value):
         self.__name = value
@@ -17,8 +17,8 @@ class MenuScreenBuilder:
         return self
 
     def build(self):
-        menuScreen = MenuScreen(self.__app)
+        gameScreen = GameScreen()
 
-        menuScreen.name = self.__name
+        gameScreen.name = self.__name
 
-        return menuScreen
+        return gameScreen

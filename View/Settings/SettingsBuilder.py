@@ -1,7 +1,7 @@
 from View.Settings.SettingsScreen import SettingsScreen
 
 
-class SettingsScreenBuilder:
+class SettingsBuilder:
     def __init__(self):
         self.__name = None
         self.__app = None

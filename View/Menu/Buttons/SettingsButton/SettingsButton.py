@@ -11,7 +11,7 @@ class SettingsButton(ShaderButton):
 
     def provide_color(self, *dt):
         if self.state == "normal":
-            self.canvas["current_color"] = tuple(self.app.settings_button_color)
+            self.canvas["current_color"] = tuple(self.app.normal_settings_button_color)
 
         else:
-            self.canvas["current_color"] = tuple(self.app.on_press_settings_button_color)
+            self.canvas["current_color"] = tuple(self.app.pressed_settings_button_color)

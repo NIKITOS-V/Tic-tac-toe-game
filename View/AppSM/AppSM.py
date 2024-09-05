@@ -1,7 +1,7 @@
 from kivy.uix.screenmanager import ScreenManager, WipeTransition, SlideTransition
 
 
-class MainScreenManager(ScreenManager):
+class AppSM(ScreenManager):
     __right = "right"
     __left = "left"
 

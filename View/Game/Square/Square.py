@@ -2,7 +2,7 @@ from kivy.lang import Builder
 from kivy.properties import StringProperty
 from kivy.uix.button import Button
 
-Builder.load_file("View/Game/Square/SquareView.kv")
+Builder.load_file("BgView.kv/Game/Square/SquareView.kv")
 
 
 class Square(Button):

@@ -11,10 +11,10 @@ attribute vec2     vTexCoords0;
 
 uniform mat4       modelview_mat;
 uniform mat4       projection_mat;
-uniform vec3       current_color;
+uniform vec4       current_color;
 
 void main (void) {
-  frag_color = vec4(current_color, 1.0);
+  frag_color = current_color;
   tex_coord0 = vTexCoords0;
   gl_Position = projection_mat * modelview_mat * vec4(vPosition.xy, 0.0, 1.0);
 }
@@ -31,5 +31,5 @@ uniform sampler2D texture0;
 uniform vec2 resolution;
 
 void main (void){
-    gl_FragColor = vec4(frag_color.rgb, texture2D(texture0, tex_coord0).a);
+    gl_FragColor = vec4(frag_color.rgb, texture2D(texture0, tex_coord0).a * frag_color.a);
 }

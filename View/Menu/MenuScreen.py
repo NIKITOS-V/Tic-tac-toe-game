@@ -24,6 +24,8 @@ class MenuScreen(Screen):
     def __init_play_button(self):
         self.play_button = PlayButton(self.app)
 
+        self.play_button.on_press = self.loadGameScreen
+
         self.ids.PlayButtonLayout.add_widget(self.play_button)
 
     def __init_settings_button(self):
@@ -36,11 +38,3 @@ class MenuScreen(Screen):
 
     def loadSettingsScreen(self):
         self.manager.loadSettingsScreen()
-
-    def on_leave(self, *args):
-        self.play_button.stop_shader()
-        self.settings_button.stop_shader()
-
-    def on_pre_enter(self, *args):
-        self.play_button.start_shader()
-        self.settings_button.start_shader()

@@ -15,15 +15,7 @@ class ShaderButton(Button):
 
         self.__init__shader()
         self.__load_image()
-
-    def start_shader(self):
-        Clock.schedule_interval(self.provide_color, 0)
-
-    def provide_color(self, *dt):
-        pass
-
-    def stop_shader(self):
-        Clock.unschedule(self.provide_color)
+        self.__start_shader()
 
     def __init__shader(self):
         EventLoop.ensure_window()
@@ -37,10 +29,17 @@ class ShaderButton(Button):
 
     def __load_image(self):
         self.image = Image(
-            source=self.image_path
+            source=self.image_path,
+            size=self.size
         )
 
         self.add_widget(self.image)
+
+    def __start_shader(self):
+        Clock.schedule_interval(self.provide_color, 0)
+
+    def provide_color(self, *dt):
+        pass
 
     def on_size(self, instance,  size):
         self.size = size

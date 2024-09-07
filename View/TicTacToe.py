@@ -2,13 +2,15 @@ from kivy.app import App
 from kivy.properties import ListProperty
 
 from View.ARLayout.ARLayout import ARLayout
-from View.AppSM.AppSMBuilder import ScreenManagerBuilder
+from View.AppSM.AppSMBuilder import AppSMBuilder
+from View.Bg.AnimatedBg import AnimatedBg
 
 from View.Values.Values import *
 
 
 class TicTacToeApp(App):
     bg_color = ListProperty()
+    bg_ball_color = ListProperty()
 
     normal_play_button_color = ListProperty()
     pressed_play_button_color = ListProperty()
@@ -35,6 +37,7 @@ class TicTacToeApp(App):
 
     def set_default_values(self):
         self.bg_color = self.__global_values.default_bg_color
+        self.bg_ball_color = self.__global_values.default_bg_ball_color
 
         self.normal_play_button_color = self.__play_button_values.default_normal_color
         self.pressed_play_button_color = self.__play_button_values.default_pressed_color
@@ -45,10 +48,24 @@ class TicTacToeApp(App):
     def build(self):
         arLayout = ARLayout()
 
-        arLayout.add_widget(
-            ScreenManagerBuilder()
+        animatedBd = AnimatedBg(
+            self
+        )
+
+        appSM = (
+            AppSMBuilder()
             .setApp(self)
             .build()
         )
+
+        arLayout.add_widget(
+            animatedBd
+        )
+
+        arLayout.add_widget(
+            appSM
+        )
+
+        animatedBd.start_animation()
 
         return arLayout

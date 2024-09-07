@@ -1,4 +1,4 @@
-from kivy.uix.screenmanager import ScreenManager, WipeTransition, SlideTransition
+from kivy.uix.screenmanager import ScreenManager, SlideTransition
 
 
 class AppSM(ScreenManager):
@@ -8,7 +8,7 @@ class AppSM(ScreenManager):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.__menuScreenName = "Menu"
+        self.__menuScreenName = "Menu screen"
         self.__gameScreenName = "Game screen"
         self.__settingsScreenName = "Settings screen"
 

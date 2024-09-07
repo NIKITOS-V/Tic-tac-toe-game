@@ -4,21 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2fc9a78-a6e9-4988-94e3-bcef4707a883" name="Changes" comment="Изменена математика шейдера">
-      <change afterPath="$PROJECT_DIR$/View/Values/Values.py" afterDir="false" />
+    <list default="true" id="b2fc9a78-a6e9-4988-94e3-bcef4707a883" name="Changes" comment="Переписана структура классов - настроек кнопок игры и настроек">
+      <change afterPath="$PROJECT_DIR$/View/Bg/AnimatedBg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View/Bg/BgView.kv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/DefaultValues/CrossValues.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/DefaultValues/GlobalValues.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/DefaultValues/PlayButtonValues.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/DefaultValues/SettingsButtonValues.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/DefaultValues/SquareValues.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/DefaultValues/ZeroValues.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Formating/ParseColor.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Formating/ParseColor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Game/GameScreenBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Game/GameBuilder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Menu/MenuScreenBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Menu/MenuBuilder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/ScreenManager/AppScreenManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/AppSM/AppSM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/ScreenManager/ScreenManagerBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/AppSM/AppSMBuilder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Settings/SettingsScreenBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Settings/SettingsBuilder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/AppSM/AppSM.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/AppSM/AppSM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Game/GameScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Game/GameScreen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Game/GameView.kv" beforeDir="false" afterPath="$PROJECT_DIR$/View/Game/GameView.kv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Game/Square/Square.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Game/Square/Square.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Menu/MenuScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Menu/MenuScreen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Menu/MenuView.kv" beforeDir="false" afterPath="$PROJECT_DIR$/View/Menu/MenuView.kv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View/TicTacToe.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/TicTacToe.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,12 +140,21 @@
       <option name="project" value="LOCAL" />
       <updated>1724768682927</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Переписана структура классов - настроек кнопок игры и настроек">
+      <option name="closed" value="true" />
+      <created>1725546584627</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725546584627</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="технический коммит" />
     <MESSAGE value="Изменена математика шейдера" />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменена математика шейдера" />
+    <MESSAGE value="Переписана структура классов - настроек кнопок игры и настроек" />
+    <option name="LAST_COMMIT_MESSAGE" value="Переписана структура классов - настроек кнопок игры и настроек" />
   </component>
 </project>

@@ -5,19 +5,25 @@ class GlobalValues:
     __parse_color = ParseColor()
 
     __default_bg_color = __parse_color.get_color(225, 223, 186)
+    __default_bg_ball_color = __parse_color.get_color(255, 0, 0, .7)
 
     def __init__(self):
-        self.bg_color = self.__default_bg_color
+        self.__bg_color = self.__default_bg_color
+        self.__bg_ball_color = self.__default_bg_ball_color
 
     @property
     def default_bg_color(self):
         return self.__default_bg_color
 
+    @property
+    def default_bg_ball_color(self):
+        return self.__default_bg_ball_color
+
     def get_bg_color(self):
-        return self.bg_color
+        return self.__bg_color
 
     def set_bg_color(self, red, green, blue):
-        self.bg_color = self.__parse_color.get_color(red, green, blue)
+        self.__bg_color = self.__parse_color.get_color(red, green, blue)
 
 
 class PlayButtonValues:

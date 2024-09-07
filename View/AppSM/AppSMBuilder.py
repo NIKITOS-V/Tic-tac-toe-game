@@ -4,7 +4,7 @@ from View.Settings.SettingsBuilder import SettingsBuilder
 from View.AppSM.AppSM import AppSM
 
 
-class ScreenManagerBuilder:
+class AppSMBuilder:
     def __init__(self):
         self.__app = None
 

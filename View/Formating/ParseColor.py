@@ -1,31 +1,50 @@
-from accessify import private
-
 from View.Formating.Errors import ColorError
 
 
 class ParseColor:
-    __minColorValue = 0
-    __maxColorValue = 255
+    __min_shade_value = 0
+    __max_shade_value = 255
 
-    @private
-    def is_correct_values(self, red: int, green: int, blue: int) -> bool:
-        return (
-                self.__minColorValue <= red <= self.__maxColorValue and
-                self.__minColorValue <= green <= self.__maxColorValue and
-                self.__minColorValue <= blue <= self.__maxColorValue
-        )
+    __min_alfa_value = 0.
+    __max_alfa_value = 1.
 
-    def get_color(self, red: int, green: int, blue: int) -> tuple:
+    def __is_correct_values(self, red: int, green: int, blue: int, alfa: float) -> bool:
         """
+        Функция проверки введённых оттенков на корректность.
+
         :param red: *int* ∈ [0, 255]
         :param green: *int* ∈ [0, 255]
         :param blue: *int* ∈ [0, 255]
-        :return: (**red** / 255, **green** / 255, **blue** / 255)
+        :param alfa: *float* ∈ [0, 1]
 
-        Функция перевода цвета rgb формата в процентный вид.
+        :return: *bool*
         """
-        if self.is_correct_values(red, blue, green):
-            return red / self.__maxColorValue, green / self.__maxColorValue, blue / self.__maxColorValue
+
+        return (
+                self.__min_shade_value <= red <= self.__max_shade_value and
+                self.__min_shade_value <= green <= self.__max_shade_value and
+                self.__min_shade_value <= blue <= self.__max_shade_value and
+                self.__min_alfa_value <= alfa <= self.__max_alfa_value
+        )
+
+    def get_color(self, red: int, green: int, blue: int, alfa: float = 1.) -> tuple:
+        """
+        Функция перевода цвета rgb формата в процентный вид.
+
+        :param red: *int* ∈ [0, 255]
+        :param green: *int* ∈ [0, 255]
+        :param blue: *int* ∈ [0, 255]
+        :param alfa: *float* ∈ [0, 1]
+        :return: (**red** / 255, **green** / 255, **blue** / 255)
+        """
+
+        if self.__is_correct_values(red, blue, green, alfa):
+            return (
+                float(red / self.__max_shade_value),
+                float(green / self.__max_shade_value),
+                float(blue / self.__max_shade_value),
+                float(alfa)
+            )
 
         else:
             raise ColorError()

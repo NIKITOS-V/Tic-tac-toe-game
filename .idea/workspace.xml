@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2fc9a78-a6e9-4988-94e3-bcef4707a883" name="Changes" comment="Переписана структура классов - настроек кнопок игры и настроек">
-      <change afterPath="$PROJECT_DIR$/View/Bg/AnimatedBg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View/Bg/BgView.kv" afterDir="false" />
+    <list default="true" id="b2fc9a78-a6e9-4988-94e3-bcef4707a883" name="Changes" comment="Добавлена анимация заднего фона">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/AppSM/AppSM.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/AppSM/AppSM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Game/GameScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Game/GameScreen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Game/GameView.kv" beforeDir="false" afterPath="$PROJECT_DIR$/View/Game/GameView.kv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Game/Square/Square.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Game/Square/Square.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Menu/MenuScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Menu/MenuScreen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Menu/MenuView.kv" beforeDir="false" afterPath="$PROJECT_DIR$/View/Menu/MenuView.kv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/TicTacToe.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/TicTacToe.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,9 +68,15 @@
   &quot;keyToString&quot;: {
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;work__with__settings__screen&quot;
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programs\Pyton\Tic-tac-toe\View\Bg" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Tic-tac-toe" />
@@ -150,6 +148,9 @@
     </task>
     <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.glsl" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="технический коммит" />

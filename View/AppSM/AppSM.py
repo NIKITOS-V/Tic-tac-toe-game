@@ -1,46 +1,40 @@
+from enum import Enum
+
 from kivy.uix.screenmanager import ScreenManager, SlideTransition
 
 
-class AppSM(ScreenManager):
-    __right = "right"
-    __left = "left"
+class ScreenType(str, Enum):
+    menu_screen = "Menu screen"
+    game_screen = "Game screen"
+    settings_screen = "Settings screen"
 
+
+class DirectionType(str, Enum):
+    right = "right"
+    left = "left"
+
+
+class AppSM(ScreenManager):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.__menuScreenName = "Menu screen"
-        self.__gameScreenName = "Game screen"
-        self.__settingsScreenName = "Settings screen"
+        self.transition = SlideTransition(duration=.6)
 
-        self.transition = SlideTransition()
-
-    @property
-    def menuScreenName(self):
-        return self.__menuScreenName
-
-    @property
-    def gameScreenName(self):
-        return self.__gameScreenName
-
-    @property
-    def settingsScreenName(self):
-        return self.__settingsScreenName
-
-    def loadMenuScreen(self):
-        if self.current == self.gameScreenName:
-            self.transition.direction = self.__right
+    def load_menu_screen(self, *args):
+        if self.current == ScreenType.game_screen:
+            self.transition.direction = DirectionType.right
 
         else:
-            self.transition.direction = self.__left
+            self.transition.direction = DirectionType.left
 
-        self.current = self.__menuScreenName
+        self.current = ScreenType.menu_screen
 
-    def loadGameScreen(self):
-        self.transition.direction = self.__left
+    def load_game_screen(self, *args):
+        self.transition.direction = DirectionType.left
 
-        self.current = self.__gameScreenName
+        self.current = ScreenType.game_screen
 
-    def loadSettingsScreen(self):
-        self.transition.direction = self.__right
+    def load_settings_screen(self, *args):
+        self.transition.direction = DirectionType.right
 
-        self.current = self.__settingsScreenName
+        self.current = ScreenType.settings_screen

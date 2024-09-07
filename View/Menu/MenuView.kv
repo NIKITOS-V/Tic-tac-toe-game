@@ -12,10 +12,11 @@
             anchor_x: "center"
             anchor_y: "center"
 
+            AnchorLayout
+                id: play_button_layout
 
-            RelativeLayout
-                id: PlayButtonLayout
-
+                anchor_x: "center"
+                anchor_y: "center"
                 size_hint: .4, None
 
                 on_size: self.height = self.width
@@ -23,18 +24,18 @@
 
         GridLayout:
             size_hint: 1, 1 - main_layout_size_hint_y
-
             cols: 3
 
             AnchorLayout:
                 anchor_x: "center"
                 anchor_y: "center"
 
-                RelativeLayout:
-                    id: SettingsButtonLayout
+                AnchorLayout:
+                    id: settings_button_layout
+
+                    anchor_x: "center"
+                    anchor_y: "center"
                     size_hint: .8, .8
-
-
 
             Widget:
             Widget:

@@ -1,3 +1,5 @@
+from kivy.animation import Animation
+
 from View.Shader.ShaderButton import ShaderButton
 
 
@@ -7,11 +9,22 @@ class PlayButton(ShaderButton):
 
         self.__app = app
 
-        super().__init__(self.__image_path, **kwargs)
+        super().__init__(self.__image_path, self.__app.normal_play_button_color, **kwargs)
 
-    def provide_color(self, *dt):
-        if self.state == "normal":
-            self.canvas["current_color"] = tuple(self.__app.normal_play_button_color)
+    def change_color(self):
+        print(1)
+        anim = Animation(
+            current_color=self.__app.pressed_play_button_color,
+            duration=self.__app.play_button_duration_of_change
+        )
 
-        else:
-            self.canvas["current_color"] = tuple(self.__app.pressed_play_button_color)
+        anim.start(self)
+
+    def return_color(self):
+        anim = Animation(
+            current_color=self.__app.normal_play_button_color,
+            duration=self.__app.play_button_duration_of_change
+        )
+
+        anim.start(self)
+

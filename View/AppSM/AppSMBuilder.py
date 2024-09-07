@@ -1,7 +1,7 @@
 from View.Game.GameBuilder import GameBuilder
 from View.Menu.MenuBuilder import MenuBuilder
 from View.Settings.SettingsBuilder import SettingsBuilder
-from View.AppSM.AppSM import AppSM
+from View.AppSM.AppSM import AppSM, ScreenType
 
 
 class AppSMBuilder:
@@ -18,21 +18,21 @@ class AppSMBuilder:
 
         screenManager.add_widget(
             MenuBuilder()
-            .setName(screenManager.menuScreenName)
+            .setName(ScreenType.menu_screen)
             .setApp(self.__app)
             .build()
         )
 
         screenManager.add_widget(
             SettingsBuilder()
-            .setName(screenManager.settingsScreenName)
+            .setName(ScreenType.settings_screen)
             .setApp(self.__app)
             .build()
         )
 
         screenManager.add_widget(
             GameBuilder()
-            .setName(screenManager.gameScreenName)
+            .setName(ScreenType.game_screen)
             .setApp(self.__app)
             .build()
         )

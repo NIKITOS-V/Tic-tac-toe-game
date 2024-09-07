@@ -9,19 +9,18 @@
 title = Крестики нолики
 
 # (str) Package name
-package.name = Tic tac toe
-
+package.name = tictactoegame
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.nikitos_v
+package.domain = org.3tg
 
 # (str) Source code where the main.py live
 source.dir = .
 
 # (list) Source files to include (leave empty to include all the files)
-source.include_exts = py,png,kv,glsl,jpeg
+source.include_exts = py,png,kv,glsl,jpeg,atlas
 
 # (list) List of inclusions using pattern matching
-#source.include_patterns = assets/*,images/*.png
+#source.include_patterns = images/*.png
 
 # (list) Source files to exclude (leave empty to not exclude anything)
 #source.exclude_exts = spec
@@ -34,7 +33,7 @@ source.include_exts = py,png,kv,glsl,jpeg
 #source.exclude_patterns = license,images/*/*.jpg
 
 # (str) Application versioning (method 1)
-version = 0.1
+version = 0.2
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]

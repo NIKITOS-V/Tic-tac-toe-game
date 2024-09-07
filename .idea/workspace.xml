@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2fc9a78-a6e9-4988-94e3-bcef4707a883" name="Changes" comment="Добавлен buildozer.spec для сборки apk" />
+    <list default="true" id="b2fc9a78-a6e9-4988-94e3-bcef4707a883" name="Changes" comment="Удаление .gitignore в корне">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/ARLayout/ARLayout.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/ARLayout/ARLayout.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/AppSM/AppSM.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/AppSM/AppSM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/AppSM/AppSMBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/AppSM/AppSMBuilder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Bg/AnimatedBg.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Bg/AnimatedBg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Bg/BgView.kv" beforeDir="false" afterPath="$PROJECT_DIR$/View/Bg/BgView.kv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Formating/ParseColor.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Formating/ParseColor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Game/GameScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Game/GameScreen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Menu/Buttons/PlayButton/PlayButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Menu/Buttons/PlayButton/PlayButton.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Menu/Buttons/SettingsButton/SettingsButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Menu/Buttons/SettingsButton/SettingsButton.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Menu/MenuScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Menu/MenuScreen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Menu/MenuView.kv" beforeDir="false" afterPath="$PROJECT_DIR$/View/Menu/MenuView.kv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Settings/SettingsScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Settings/SettingsScreen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Shader/ShaderButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Shader/ShaderButton.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View/Values/Values.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Values/Values.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildozer.spec" beforeDir="false" afterPath="$PROJECT_DIR$/buildozer.spec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +89,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programs\Pyton\Tic-tac-toe" />
       <recent name="D:\Programs\Pyton\Tic-tac-toe\View\Bg" />
     </key>
   </component>
@@ -151,7 +170,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725702485821</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Пересоздание главного файла">
+      <option name="closed" value="true" />
+      <created>1725703544893</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1725703544893</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Удаление .gitignore в корне">
+      <option name="closed" value="true" />
+      <created>1725704294807</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725704294807</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -163,6 +198,8 @@
     <MESSAGE value="Изменена математика шейдера" />
     <MESSAGE value="Переписана структура классов - настроек кнопок игры и настроек" />
     <MESSAGE value="Добавлен buildozer.spec для сборки apk" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен buildozer.spec для сборки apk" />
+    <MESSAGE value="Пересоздание главного файла" />
+    <MESSAGE value="Удаление .gitignore в корне" />
+    <option name="LAST_COMMIT_MESSAGE" value="Удаление .gitignore в корне" />
   </component>
 </project>

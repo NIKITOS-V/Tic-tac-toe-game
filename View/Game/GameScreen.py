@@ -8,4 +8,4 @@ Builder.load_file("View/Game/GameView.kv")
 class GameScreen(Screen):
 
     def back(self):
-        self.manager.loadMenuScreen()
+        self.manager.load_menu_screen()

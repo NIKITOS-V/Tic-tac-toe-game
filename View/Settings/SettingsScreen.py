@@ -12,7 +12,7 @@ class SettingsScreen(Screen):
         self.app = app
 
     def back(self):
-        self.manager.loadMenuScreen()
+        self.manager.load_menu_screen()
 
     def ChangeText(self, app):
         app.text = "text"

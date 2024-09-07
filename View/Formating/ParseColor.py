@@ -27,7 +27,7 @@ class ParseColor:
                 self.__min_alfa_value <= alfa <= self.__max_alfa_value
         )
 
-    def get_color(self, red: int, green: int, blue: int, alfa: float = 1.) -> tuple:
+    def get_color(self, red: int, green: int, blue: int, alfa: float = 1.) -> list[float]:
         """
         Функция перевода цвета rgb формата в процентный вид.
 
@@ -35,16 +35,16 @@ class ParseColor:
         :param green: *int* ∈ [0, 255]
         :param blue: *int* ∈ [0, 255]
         :param alfa: *float* ∈ [0, 1]
-        :return: (**red** / 255, **green** / 255, **blue** / 255)
+        :return: [**red** / 255, **green** / 255, **blue** / 255]
         """
 
         if self.__is_correct_values(red, blue, green, alfa):
-            return (
+            return [
                 float(red / self.__max_shade_value),
                 float(green / self.__max_shade_value),
                 float(blue / self.__max_shade_value),
                 float(alfa)
-            )
+            ]
 
         else:
             raise ColorError()

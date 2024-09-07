@@ -1,5 +1,6 @@
 from kivy.app import App
-from kivy.properties import ListProperty
+from kivy.properties import ListProperty, NumericProperty
+from kivy.uix.relativelayout import RelativeLayout
 
 from Model.Service import Service
 from Presenter.Presenter import Presenter
@@ -11,11 +12,18 @@ from View.Values.Values import *
 
 
 class TicTacToeApp(App):
+    main_layout_size = ListProperty()
+
     bg_color = ListProperty()
-    bg_ball_color = ListProperty()
+    ball_alfa = NumericProperty()
+    ball_shade = NumericProperty()
+    ball_change_shade_duration = NumericProperty()
+    ball_spawn_interval = NumericProperty()
 
     normal_play_button_color = ListProperty()
     pressed_play_button_color = ListProperty()
+    play_button_pressed_size_hint = NumericProperty()
+    play_button_duration_of_change = NumericProperty()
 
     normal_settings_button_color = ListProperty()
     pressed_settings_button_color = ListProperty()
@@ -25,7 +33,7 @@ class TicTacToeApp(App):
 
         self.presenter = presenter
 
-        self.__global_values = None
+        self.__bg_values = None
         self.__play_button_values = None
         self.__settings_button_values = None
 
@@ -33,26 +41,31 @@ class TicTacToeApp(App):
         self.set_default_values()
 
     def __init_color_settings(self):
-        self.__global_values = GlobalValues()
+        self.__bg_values = BgValues()
         self.__play_button_values = PlayButtonValues()
         self.__settings_button_values = SettingsButtonValues()
 
     def set_default_values(self):
-        self.bg_color = self.__global_values.default_bg_color
-        self.bg_ball_color = self.__global_values.default_bg_ball_color
+        self.bg_color = self.__bg_values.default_bg_color
+        self.ball_shade = self.__bg_values.default_ball_shade
+        self.ball_alfa = self.__bg_values.default_ball_alfa
+        self.ball_change_shade_duration = self.__bg_values.default_change_shade_duration
+        self.ball_spawn_interval = self.__bg_values.default_ball_spawn_interval
 
         self.normal_play_button_color = self.__play_button_values.default_normal_color
         self.pressed_play_button_color = self.__play_button_values.default_pressed_color
+        self.play_button_pressed_size_hint = self.__play_button_values.default_pressed_size_hint
+        self.play_button_duration_of_change = self.__play_button_values.default_duration_of_change
 
         self.normal_settings_button_color = self.__settings_button_values.default_normal_color
         self.pressed_settings_button_color = self.__settings_button_values.default_pressed_color
 
     def build(self):
-        arLayout = ARLayout()
+        globalLayout = RelativeLayout()
 
-        animatedBd = AnimatedBg(
-            self
-        )
+        mainLayout = ARLayout(self)
+
+        animatedBg = AnimatedBg(self)
 
         appSM = (
             AppSMBuilder()
@@ -60,17 +73,15 @@ class TicTacToeApp(App):
             .build()
         )
 
-        arLayout.add_widget(
-            animatedBd
-        )
+        globalLayout.add_widget(animatedBg)
 
-        arLayout.add_widget(
-            appSM
-        )
+        mainLayout.add_widget(appSM)
 
-        animatedBd.start_animation()
+        globalLayout.add_widget(mainLayout)
 
-        return arLayout
+        animatedBg.start_animation()
+
+        return globalLayout
 
 
 if __name__ == "__main__":

@@ -5,6 +5,11 @@ from kivy.uix.relativelayout import RelativeLayout
 class ARLayout(RelativeLayout):
     ratio = NumericProperty(16 / 9.)
 
+    def __init__(self, app, **kwargs):
+        super().__init__(**kwargs)
+
+        self.app = app
+
     def do_layout(self, *args):
         for child in self.children:
             self.apply_ratio(child)
@@ -23,3 +28,5 @@ class ARLayout(RelativeLayout):
         else:
             h = h2
         child.size = w, h
+
+        self.app.main_layout_size = w, h

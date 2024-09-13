@@ -6,22 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b2fc9a78-a6e9-4988-94e3-bcef4707a883" name="Changes" comment="Удаление .gitignore в корне">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/ARLayout/ARLayout.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/ARLayout/ARLayout.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/AppSM/AppSM.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/AppSM/AppSM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/AppSM/AppSMBuilder.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/AppSM/AppSMBuilder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Bg/AnimatedBg.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Bg/AnimatedBg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Bg/BgView.kv" beforeDir="false" afterPath="$PROJECT_DIR$/View/Bg/BgView.kv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Formating/ParseColor.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Formating/ParseColor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Game/GameScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Game/GameScreen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Menu/Buttons/PlayButton/PlayButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Menu/Buttons/PlayButton/PlayButton.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Menu/Buttons/SettingsButton/SettingsButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Menu/Buttons/SettingsButton/SettingsButton.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Menu/MenuScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Menu/MenuScreen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Menu/MenuView.kv" beforeDir="false" afterPath="$PROJECT_DIR$/View/Menu/MenuView.kv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Settings/SettingsScreen.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Settings/SettingsScreen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Shader/ShaderButton.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Shader/ShaderButton.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View/Values/Values.py" beforeDir="false" afterPath="$PROJECT_DIR$/View/Values/Values.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildozer.spec" beforeDir="false" afterPath="$PROJECT_DIR$/buildozer.spec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +20,32 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/work_with_settings_screen" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
